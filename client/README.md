@@ -1,4 +1,39 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr/>
+
+## a web app is being installed from scratch
+우선 채팅, PWA 테스트합니다.
+<hr/>
+
+## tutorial video
+https://youtu.be/ZwFA3YMfkoc
+
+### 설치 package FE
+#### 해당 폴더 내에 리액트 설치하기
+```
+[클라]
+mkdir client
+cd client
+npx create-react-app ./
+npm i --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string
+```
+
+```
+[서버]
+cd ..
+mkdir server
+cd server
+npm init -y [반드시 npm init는 서버 할 때만!]
+
+npm i --save cors nodemon express socket.io
+```
+
+```
+npm i --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string
+npm i react-router-dom
+```
+
+<hr/>
 
 ## Available Scripts
 
