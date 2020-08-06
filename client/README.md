@@ -16,6 +16,8 @@ mkdir client
 cd client
 npx create-react-app ./
 npm i --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string
+
+npm i --save react-router-dom
 ```
 
 ```
