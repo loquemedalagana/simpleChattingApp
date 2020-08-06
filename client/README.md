@@ -7,5 +7,6 @@ https://youtu.be/ZwFA3YMfkoc
 
 ### 설치 package FE
 <pre>
+yarn global add create-react-app
 yarn add --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string
 </pre>
