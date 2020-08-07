@@ -1,5 +1,6 @@
 # React Chat app with node.js (express, socket.io)
-### db는 설치하지 않았습니다.
+### 나중에 무조건 파일 전송 기능 추가할 것!!!
+
 <hr/>
 
 ## 정리할 내용
