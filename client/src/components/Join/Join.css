@@ -23,6 +23,7 @@ html, body {
     background-image: url("../images/background.png");
     background-position: center;
     background-size : cover;
+    background-attachment: fixed; /* 줄였을 때 배경화면 깨지는거 수정 */
    /* background-repeat : no-repeat; */ 
   }
   

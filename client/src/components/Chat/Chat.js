@@ -22,11 +22,17 @@ const Chat = ({ location }) => {
 
         //console.log(socket);
         socket.emit('join', { name, room }, ({ error }) => {
-            alert(error);
+            //alert(error);
         });
 
+        return () => {
+            socket.emit('disconnect');
+
+            socket.off();
+        }
+
     }, [ENDPOINT, location.search]); //오직 rerander할때만 이펙트가 옴
-    
+
     return (
         <h1>chat</h1>
     );

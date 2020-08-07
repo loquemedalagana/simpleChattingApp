@@ -20,14 +20,14 @@ io.on('connection', (socket) => { //클라에서 받아온 정보
 
         const error = true;
 
-        if(error){ //error handling
-            callback({error: 'error'});
-        }
+        // if(error){ //error handling
+        //     callback({error: 'error'});
+        // }
 
     });
 
     //user is gone
-    socket.on('disconnect', () => {
+    socket.on('disconnect', () => { //basic disconnect effect
         console.log('User had left');
     });
 
