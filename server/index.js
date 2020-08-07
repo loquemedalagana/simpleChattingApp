@@ -15,7 +15,7 @@ app.use(router); //middle ware call
 io.on('connection', (socket) => { //클라에서 받아온 정보
     console.log('we have a new conncection!');
 
-    socket.on('join', ({name, room}) => {
+    socket.on('join', ({name, room}) => { //매개변수가 object
         console.log(name, room);
     });
 
@@ -24,9 +24,6 @@ io.on('connection', (socket) => { //클라에서 받아온 정보
         console.log('User had left');
     });
 
-//    socket.on('chat message', (msg) => {
-//        console.log('message: ' + msg);
- //   })
 });
 
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
