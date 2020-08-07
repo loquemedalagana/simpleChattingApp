@@ -18,7 +18,7 @@ html, body {
     text-align: center;
     height: 100vh;
     align-items: center;
-    background-color: #1A1A1D;
+    background-color: #cffffe;
   }
   
   .joinInnerContainer {
@@ -29,25 +29,33 @@ html, body {
     border-radius: 0;
     padding: 15px 20px;
     width: 100%;
+    border-radius: 5px;
+    border: none; /*input에 테두리 없애기 - 지저분...*/
+    outline: none;
   }
   
   .heading {
-    color: white;
+    color: #1b262c;
     font-size: 2.5em;
     padding-bottom: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #0f4c75;
   }
   
   .button {
-      color: #fff !important;
+      color: #3c2c3e !important;
       text-transform: uppercase;
       text-decoration: none;
-      background: #2979FF;
+      background: #ffc1f3;
       padding: 20px;
       border-radius: 5px;
       display: inline-block;
       border: none;
+      outline: none;
       width: 100%;
+  }
+
+  .button:hover{
+    background-color: bisque;
   }
   
   .mt-20 {

@@ -5,9 +5,29 @@ import './Join.css';
 
 const Join = () => {
     const [name, setName] = useState(''); //react hook
-    const [room, setRoom] = useState('');
+    const [room, setRoom] = useState(''); //event에 훅을 더함
     return (
-        <h1>Join</h1>
+        <div className = "joinOuterContainer">
+            <div className = "joinInnterContainer">
+                <h1 className = "heading">Join</h1>
+                <div><input placeholder = "" className = "joinInput" type = "text"
+                 onChange = {
+                     (event) => setName(event.target.value)
+                }/></div>
+
+                <div><input placeholder = "" className = "joinInput mt-20" type = "text"
+                 onChange = {
+                     (event) => setRoom(event.target.value)
+                }/></div>
+                
+                <Link onClick={
+                    event => (!name || !room) ? event.preventDefault() : null} 
+                    to = {`/chat?name=${name}&room=${room}`}>
+
+                    <button className = "button mt-20" type= "submit">Sign in</button>
+                </Link>
+            </div>
+        </div>
     );
 };
 
