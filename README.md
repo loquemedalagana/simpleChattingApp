@@ -1,5 +1,12 @@
 # React Chat app with node.js (express, socket.io)
-### 나중에 무조건 파일 전송 기능 추가할 것!!!
+## 나중에 추가해야 할 기능
+
+<ol>
+<li>파일 첨부 기능</li>
+<li>데이터베이스에서 불러오는 기능</li>
+<li>룸을 하나로 통합하는 기능</li>
+<li>응용 좀 해서 DM으로 바꾸기</li>
+</ol>
 
 <hr/>
 
