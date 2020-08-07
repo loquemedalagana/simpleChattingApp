@@ -18,7 +18,12 @@ html, body {
     text-align: center;
     height: 100vh;
     align-items: center;
-    background-color: #cffffe;
+    /*background-color: #cffffe;*/
+    background-attachment: fixed;
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size : cover;
+   /* background-repeat : no-repeat; */ 
   }
   
   .joinInnerContainer {
