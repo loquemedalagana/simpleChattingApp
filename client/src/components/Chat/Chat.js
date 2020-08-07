@@ -6,11 +6,14 @@ import io from 'socket.io-client';
 import './Chat.css';
 
 const Chat = ({ location }) => {
-    useEffect(() => {
-        const data = queryString.parse(location.search); //from react router
+    const [name, setName] = useState(''); //state
+    const [room, setRoom] = useState('');
 
-        console.log(location.search);
-        console.log(data);
+    useEffect(() => {
+        const {name, room} = queryString.parse(location.search); //destructured
+
+        setName(name);
+        setRoom(room);
     });
     return (
         <h1>chat</h1>
