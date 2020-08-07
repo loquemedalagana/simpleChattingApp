@@ -19,11 +19,11 @@ html, body {
     height: 100vh;
     align-items: center;
     /*background-color: #cffffe;*/
-    background-attachment: fixed;
     background-image: url("../images/background.png");
     background-position: center;
     background-size : cover;
-    background-attachment: fixed; /* 줄였을 때 배경화면 깨지는거 수정 */
+    background-attachment: scroll; 
+    overflow: auto; /* 줄였을 때 배경화면 깨지는거 수정 완료!!!*/
    /* background-repeat : no-repeat; */ 
   }
   

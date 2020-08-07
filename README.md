@@ -4,7 +4,7 @@
 
 ## 정리할 내용
 <ul>
-<li>08.07 배운 내용 (서버, 클라 통신)</li>
+<li>08.07 배운 내용 (서버, 클라 통신) -> 첫 번째 user effect</li>
 
 ``` javascript
 //client (chat.js)
@@ -30,6 +30,10 @@ if(error){ //error handling
     callback({error: 'error'});
 }
 ```
+
+<li>08.07~ managing users in users.js</li>
+
+<li></li>
 
 <li></li>
 </ul>
