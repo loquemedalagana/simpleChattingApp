@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1A1A1D;
+    background-color: #cffffe;
   }
   
   .container {
@@ -16,6 +16,7 @@
     width: 35%;
   }
   
+  /*media 속성은 반응형 고려*/
   @media (min-width: 320px) and (max-width: 480px) {
     .outerContainer {
       height: 100%;
