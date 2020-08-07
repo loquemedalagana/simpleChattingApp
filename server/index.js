@@ -12,8 +12,12 @@ const io = socketio(server);
 
 app.use(router); //middle ware call
 
-io.on('connection', (socket) => {
+io.on('connection', (socket) => { //클라에서 받아온 정보
     console.log('we have a new conncection!');
+
+    socket.on('join', ({name, room}) => {
+        console.log(name, room);
+    });
 
     //user is gone
     socket.on('disconnect', () => {
