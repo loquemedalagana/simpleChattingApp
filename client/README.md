@@ -51,7 +51,11 @@ const Chat = ({ location }) => {
 
 ```
 
-```
+<br/>
+<hr/>
+
+
+``` javascript
 [서버]
 cd ..
 mkdir server
@@ -61,7 +65,7 @@ npm init -y [반드시 npm init는 서버 할 때만!]
 npm i --save cors nodemon express socket.io
 ```
 
-```
+``` javascript
 npm i --save react-router socket.io-client react-scroll-to-bottom react-emoji query-string
 npm i react-router-dom
 ```
