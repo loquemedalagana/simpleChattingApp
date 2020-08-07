@@ -8,10 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## tutorial video
 https://youtu.be/ZwFA3YMfkoc
 
-### 설치 package FE
-#### 해당 폴더 내에 리액트 설치하기
+## 설치 -> 클라 서버 순
+#### client
 ```
-[클라]
 mkdir client
 cd client
 npx create-react-app ./
@@ -20,8 +19,9 @@ npm i --save react-router socket.io-client react-scroll-to-bottom react-emoji qu
 npm i --save react-router-dom
 ```
 <br/>
+
+#### server
 ``` 
-[서버]
 cd ..
 mkdir server
 cd server
@@ -35,6 +35,7 @@ npm i --save cors nodemon express socket.io
 ### 클라에서 전송한 메시지 출력
 https://socket.io/get-started/chat/#Emitting-events
 <br/>
+
 ``` javascript
 let socket; //empty variable to save data from client
 
@@ -64,7 +65,8 @@ const Chat = ({ location }) => {
 <hr/>
 
 ## 서버
-```
+
+``` javascript
 ```
 
 
