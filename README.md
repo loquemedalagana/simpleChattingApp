@@ -47,6 +47,16 @@ socket.on('join', ({name, room}, callback) => { //매개변수가 object
 
 <li>08.07~ managing users in users.js</li>
 
+``` javascript
+//server index.js
+
+```
+
+``` javascript
+//client
+
+```
+
 <li></li>
 
 <li></li>
