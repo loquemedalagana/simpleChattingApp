@@ -45,8 +45,14 @@ const Chat = ({ location }) => {
 
     //function for sending message (전송을 위한 jsx 입력)
     const sendMessage = (event) => {
+        event.preventDefault(); //새로고침 노가다 방지
 
+        if(message){ //백단이랑 소통하는 부분
+            socket.emit('sendMessage', message, () => setMessage(''));
+        }
     };
+
+    console.log(message, messages);
 
     return (
         <div className = "outerContainer">
