@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2979FF;
+    background: #ffc1f3;
     border-radius: 4px 4px 0 0;
     height: 60px;
     width: 100%;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     margin-left: 5%;
-    color: white;
+    color: #3c2c3e;
   }
   
   .rightInnerContainer {
