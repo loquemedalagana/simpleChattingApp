@@ -1,7 +1,7 @@
 import React from 'react';
 import './Input.css';
 
-const Input = () => { //parameter?
+const Input = ({message, setMessage, sendMessage}) => { //parameter?
     return (
         <form className = "form">
             <input 
@@ -12,7 +12,7 @@ const Input = () => { //parameter?
                 onChange={(event) => setMessage(event.target.value)} 
                 onKeyPress={(event) => event.key === 'Enter' ? sendMessage(event) : null}
             />
-            <button onClick=""></button>
+            <button className = "sendButton" onClick={(event) => sendMessage(event)}>Send</button>
         </form>
     );
 }
