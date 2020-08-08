@@ -18,3 +18,8 @@ const InfoBar = ({ room }) => (
 )
 
 export default InfoBar;
+
+/*
+닫기 표시 누르면 제자리로 감
+본 앱에서는 메인화면 혹은 이전 경로로 감
+*/

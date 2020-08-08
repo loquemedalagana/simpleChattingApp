@@ -5,6 +5,8 @@ import io from 'socket.io-client';
 //import Input from './partiales/Input/input';
 
 import InfoBar from './partiales/InfoBar/InfoBar';
+import Input from './partiales/InfoBar/InfoBar';
+
 import './Chat.css';
 
 let socket; //empty variable to save data from client
@@ -60,7 +62,7 @@ const Chat = ({ location }) => {
         <div className = "outerContainer">
             <div className = "container">
                 <InfoBar room = {room} />
-                {/*나중에 input 추가*/}
+                <Input message = {message} setMessage={setMessage} sendMessage={sendMessage}/>
             </div>
         </div>
     );
