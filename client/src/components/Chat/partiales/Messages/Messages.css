@@ -1,3 +1,4 @@
+/*댓글란에 이거 재탕함!*/
 .messageBox {
     background: #F3F3F3;
     border-radius: 20px;
@@ -42,16 +43,16 @@
     padding-right: 10px;
   }
   
-  .justifyStart {
+  .justifyStart { /*왼쪽 정렬 - 댓글 작성 시 참고*/
     justify-content: flex-start;
   }
   
-  .justifyEnd {
+  .justifyEnd { /*오른쪽 정렬 - 댓글 작성 시 참고*/
     justify-content: flex-end;
   }
   
-  .colorWhite {
-    color: white;
+  .colorLight {
+    color: #ffffdd;
   }
   
   .colorDark {
@@ -59,9 +60,9 @@
   }
   
   .backgroundPink {
-    background: #ffc1f3;
+    background: #fe91ca;
   }
   
   .backgroundLight {
-    background: #F3F3F3;
+    background: #f3ecc2;
   }
