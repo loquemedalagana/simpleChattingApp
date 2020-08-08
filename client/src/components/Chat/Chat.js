@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import queryString from 'query-string';
 
 import io from 'socket.io-client';
-//import Input from './partiales/Input/input';
 
 import InfoBar from './partiales/InfoBar/InfoBar';
 import Input from './partiales/Input/Input';
+import Messages from './partiales/Messages/Messages';
+import TextContainer from './partiales/TextContainer/TextContainer';
 
 import './Chat.css';
 
