@@ -34,9 +34,15 @@ useEffect(() => {
 
 ``` javascript
 //server (index.js)
-if(error){ //error handling
-    callback({error: 'error'});
-}
+socket.on('join', ({name, room}, callback) => { //매개변수가 object
+    console.log(name, room);
+
+    const error = true;
+
+    // if(error){ //error handling
+    //     callback({error: 'error'});
+    // }
+});
 ```
 
 <li>08.07~ managing users in users.js</li>

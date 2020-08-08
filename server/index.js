@@ -2,6 +2,8 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 
+const { addUser, removeUser, getUser, getUserInRoom } = require('./users.js');
+
 const PORT = process.env.PORT || 5000;
 
 const router = require('./router');
@@ -12,18 +14,16 @@ const io = socketio(server);
 
 app.use(router); //middle ware call
 
-io.on('connection', (socket) => { //클라에서 받아온 정보
-    console.log('we have a new conncection!');
-
+io.on('connection', (socket) => { //클라에서 받아온 정보 (소켓)
     socket.on('join', ({name, room}, callback) => { //매개변수가 object
-        console.log(name, room);
+        const { error, user } = addUser( {id: socket.id, name, room} );
 
-        const error = true;
+        if(error) return callback(error);
 
-        // if(error){ //error handling
-        //     callback({error: 'error'});
-        // }
+        //emit new event
+        
 
+        socket.join(user.room);
     });
 
     //user is gone

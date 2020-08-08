@@ -10,13 +10,13 @@ const addUser = ({id, name, room}) => { //3 parameters user 정보 받아옴
 
     const existingUser = users.find((user) => user.room === room && user.name === name);
     if(existingUser){ //중복확인
-        return {error : 'Username is taken'};
+        return {error : 'Username is taken'}; //return (1) 객체분해 1번
     }
 
     const user = {id, name, room};
     users.push(user); //임시임! 나중에 DB들어가면 달라짐
 
-    return { user }; //새로 더해진 user
+    return { user }; //새로 더해진 user, return(2) 객체분해 2번
 };
 
 const removeUser = ( id ) => {
