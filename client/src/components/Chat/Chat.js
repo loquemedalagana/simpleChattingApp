@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 //import Input from './partiales/Input/input';
 
 import InfoBar from './partiales/InfoBar/InfoBar';
-import Input from './partiales/InfoBar/InfoBar';
+import Input from './partiales/Input/Input';
 
 import './Chat.css';
 
