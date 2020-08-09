@@ -1,6 +1,7 @@
 const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
+const cors = require('cors');
 
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./users.js');
 
@@ -13,6 +14,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 app.use(router); //middle ware call
+app.use(cors());
 
 io.on('connection', (socket) => { //클라에서 받아온 정보 (소켓)
     socket.on('join', ({name, room}, callback) => { //매개변수가 object

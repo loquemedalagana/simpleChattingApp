@@ -6,7 +6,7 @@ import io from 'socket.io-client';
 import InfoBar from './partiales/InfoBar/InfoBar';
 import Input from './partiales/Input/Input';
 import Messages from './partiales/Messages/Messages';
-import TextContainer from './partiales/TextContainer/TextContainer';
+//import TextContainer from './partiales/TextContainer/TextContainer';
 
 import './Chat.css';
 
