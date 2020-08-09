@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactEmoji from 'react-emoji';
+
 import '../Messages.css';
 
 //db 연동 시 객체 부분 수정하기
@@ -16,14 +18,14 @@ const Message = ({message: {user, text}, name}) => {
             <div className="messageContainer justifyEnd">
                 <p className="sentText pr-10">{trimmedName}</p>
                 <div className="messageBox backgroundPink">
-                    <p className = "messageText colorLight">{text}</p>
+                    <p className = "messageText colorLight">{ReactEmoji.emojify(text)}</p>
                 </div>
             </div>
         )
         : (
             <div className="messageContainer justifyStart">
                 <div className="messageBox backgroundLight">
-                    <p className = "messageText colorDark">{text}</p>
+                    <p className = "messageText colorDark">{ReactEmoji.emojify(text)}</p>
                 </div>
                 <p className="sentText pl-10">{user}</p>
             </div>
