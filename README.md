@@ -1,5 +1,5 @@
 # React Chat app with node.js (express, socket.io)
-사이트 URL https://5f2faacafe2951e875573da8--simplechatapp.netlify.app/
+사이트 URL https://simplechatapp.netlify.app/
 <hr/>
 ## 나중에 추가해야 할 기능
 
