@@ -18,12 +18,12 @@ const Chat = ({ location }) => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
 
-    const ENDPOINT = 'localhost:5000'; //배포 후 이부분 바꿈 (서버로 도착했을때 주소)
+    const ENDPOINT = 'https://simple-chat-app-demo.herokuapp.com/'; //서버랑 연결하는 부분 (서버로 도착했을때 주소)
 
     useEffect(() => {
         const {name, room} = queryString.parse(location.search); //destructured
 
-        socket = io(ENDPOINT);
+        socket = io(ENDPOINT); //서버에 소켓 연결
 
         setName(name);
         setRoom(room);
