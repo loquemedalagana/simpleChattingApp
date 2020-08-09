@@ -6,7 +6,7 @@ import io from 'socket.io-client';
 import InfoBar from './partiales/InfoBar/InfoBar';
 import Input from './partiales/Input/Input';
 import Messages from './partiales/Messages/Messages';
-//import TextContainer from './partiales/TextContainer/TextContainer';
+import TextContainer from './partiales/TextContainer/TextContainer';
 
 import './Chat.css';
 
@@ -66,6 +66,9 @@ const Chat = ({ location }) => {
                 <Messages messages = {messages} name = {name}/>
                 <Input message = {message} setMessage={setMessage} sendMessage={sendMessage}/>
             </div>
+            {
+            //    <TextContainer users = {users} /> 훅으로 나중에 바꾸기
+            }
         </div>
     );
 };
