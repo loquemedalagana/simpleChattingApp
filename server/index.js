@@ -2,7 +2,7 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 
-const { addUser, removeUser, getUser, getUserInRoom } = require('./users.js');
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./users.js');
 
 const PORT = process.env.PORT || 5000;
 
@@ -27,7 +27,7 @@ io.on('connection', (socket) => { //클라에서 받아온 정보 (소켓)
         socket.join(user.room);
 
         //final emit
-        //io.to(user.room).emit('roomData', {room: user.room, users: getUserInRoom(user.room)});
+        io.to(user.room).emit('roomData', {room: user.room, users: getUsersInRoom(user.room)});
 
         callback(); //에러 있을 때 프론트에 전달
     });
@@ -35,7 +35,7 @@ io.on('connection', (socket) => { //클라에서 받아온 정보 (소켓)
     socket.on('sendMessage', (message, callback) => {
         const user = getUser(socket.id);
         io.to(user.room).emit('message', {user: user.name, text: message}); //프엔에서 받아온 정보
-        //io.to(user.room).emit('roomData', {room: user.room, users: getUserInRoom(user.room)});
+        io.to(user.room).emit('roomData', {room: user.room, users: getUsersInRoom(user.room)});
 
         callback();
     });
